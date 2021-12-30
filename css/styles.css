@@ -194,10 +194,11 @@ h2{
 /* Call to action */
 
 #cta{
-    background-color: #fd4c68;
-    padding: 7% 15%;
+    background-image: linear-gradient(#ff5864, #ff655b );
+    padding: 10% 15%;
     text-align: center;
     color:white;
+    position: relative;
 }
 
 .cta-heading{
@@ -210,13 +211,40 @@ h2{
     margin-right: 2%;
 }
 
+.cta-img{
+    width: 12%;
+    max-height: 50%;
+    border: 5px solid white;
+}
+
+.cta-img-1{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    transform: rotate(5deg);
+}
+
+.cta-img-2{
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    transform: rotate(5deg);
+}
+
+
+@media (max-width: 992px){
+    .cta-img{
+        display:none;
+    }
+}
+
 /* Contact and Copyright */
 
 #contact{
     background-color: white;
     color: #8f8f8f;
     text-align: center;
-    padding: 2%;
+    padding: 5%;
 }
 
 .contact-link-icon{
