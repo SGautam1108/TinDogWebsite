@@ -34,13 +34,12 @@ h2{
 }
 
 #header{
-    /* background-color: #ff4c68; */
     background-image: linear-gradient(to top right, #fd297b, #ff5864, #ff655b );
     color: white;
 }
 
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 10%;
 }
 
 /* Navbar */
@@ -68,23 +67,38 @@ h2{
 /* Download Button and App Mockup */
 
 .btn-download{
-    margin: 5% 3% 0 0;
+    margin: 5% 3%;
 }
 
 .title-img-container{
-    text-align: center;
+    position: relative;
 }
 
 .iphone-dog{
-    margin: 2rem;
-    width: 50%;
+    position: absolute;
+    right: 100px;
+    width: 350px;
     transform: rotate(20deg);
+    filter:drop-shadow(30px 10px 30px rgb(59, 4, 4));
+}
+
+@media (max-width: 1418px){
+    .title-row{
+        text-align: center;
+    }
+
+    .iphone-dog{
+        position: static;
+        transform: rotate(0);
+    }
 }
 
 /* Features of tindog */
 
 #features{
     padding: 5% 20%;
+    background-color: white;
+    position: relative;
 }
 
 .feature-col{
@@ -146,8 +160,6 @@ h2{
 }
 
 .testimonial-text{
-    font-size: 3rem;
-    font-weight: bold;
     padding: 5%;
 }
 
@@ -157,8 +169,6 @@ h2{
     width: 10%;
 }
 
-.carousel-indicators{
-}
 
 /* Press coverage */
 
@@ -181,3 +191,51 @@ h2{
     text-align: center;
 }
 
+/* Call to action */
+
+#cta{
+    background-color: #fd4c68;
+    padding: 7% 15%;
+    text-align: center;
+    color:white;
+}
+
+.cta-heading{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.cta-btn-download{
+    margin-top: 5%;
+    margin-right: 2%;
+}
+
+/* Copyright */
+
+#copyright{
+    background-color: white;
+    color: #8f8f8f;
+    text-align: center;
+    padding: 2%;
+}
+
+.contact-link-icon{
+    display: inline-block;
+    color: #444444;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: all 0.2s ease;
+}
+
+.contact-link-icon:hover{
+    color:black;
+    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 3px grey);
+}
+
+.copyright-text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.5rem;
+}
