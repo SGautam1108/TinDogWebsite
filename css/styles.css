@@ -4,9 +4,10 @@ html{
 
 body{
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
     position: relative;
     animation-name:fadeIn;
-    animation-duration:0.2s;
+    animation-duration:1s;
     animation-timing-function: ease-in;
 }
 
@@ -20,25 +21,31 @@ body{
     }
 }
 
-/* Header and Title */
+/* Headings */
 
-h1{
+.big-heading{
     font-weight: 900;
     font-size: 4rem;
     line-height: 1.5;
 }
 
-h2{
+.section-heading{
     font-weight: bold;
     font-size: 3rem;
 }
+
+.container-fluid{
+    padding: 7% 15%;
+}
+
+/* Header and Title */
 
 #header{
     background-image: linear-gradient(to top right, #fd297b, #ff5864, #ff655b );
     color: white;
 }
 
-.container-fluid{
+#header .container-fluid{
     padding: 3% 15% 10%;
 }
 
@@ -59,15 +66,21 @@ h2{
 }
 
 .nav-link{
-    color: white;
+    color: inherit;
     font-size: 1.25rem;
     font-weight:400;
 }
+
+.title{
+    text-align: left;
+}
+
 
 /* Download Button and App Mockup */
 
 .btn-download{
     margin: 5% 3%;
+    margin-left: 0;
 }
 
 .title-img-container{
@@ -96,14 +109,13 @@ h2{
 /* Features of tindog */
 
 #features{
-    padding: 5% 20%;
     background-color: white;
     position: relative;
 }
 
 .feature-col{
-    padding: 5%;
-    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .feature-icon{
@@ -127,6 +139,7 @@ h2{
 
 .feature-text{
     color: #8f8f8f;
+    padding: 0 15%;
 }
 
 /* Testimonial */
@@ -134,13 +147,7 @@ h2{
 #testimonials{
     background: linear-gradient(#fd4c68 30%, #e7435c 60%, #ce4242);
     color: white;
-    text-align: center;
-    padding-top: 5%;
     padding-bottom: 5%;
-}
-
-.carousel-item{
-    padding: 3% 15%;
 }
 
 .testimonial-div{
@@ -150,13 +157,19 @@ h2{
 .testimonial-div::before{
     content:'“';
     font-family: Revalia;
-    position: absolute;
-    top:-25%;
-    left: 5%;
     display: block;
-    margin: 1rem;
+    position: absolute;
+    top: -25%;
+    left: 5%;
     font-size: 150px;
     font-weight: bold;
+}
+
+@media (max-width: 1000px){
+    .testimonial-div::before{
+        top: -10%;
+        left: -25%;
+    }
 }
 
 .testimonial-text{
@@ -175,7 +188,6 @@ h2{
 #press{
     padding-bottom: 3%;
     background-color: #ce4242;
-    text-align: center;
 }
 
 .press-img{
@@ -184,19 +196,10 @@ h2{
     margin: 20px 20px 50px;
 }
 
-/* Pricing */
-
-#pricing{
-    padding: 7% 15%;
-    text-align: center;
-}
-
 /* Call to action */
 
 #cta{
     background-image: linear-gradient(#ff5864, #ff655b );
-    padding: 10% 15%;
-    text-align: center;
     color:white;
     position: relative;
 }
@@ -212,23 +215,20 @@ h2{
 }
 
 .cta-img{
-    width: 12%;
-    max-height: 50%;
+    width: 10%;
     border: 5px solid white;
+    position: absolute;
+    transform: rotate(5deg);
 }
 
 .cta-img-1{
-    position: absolute;
     left: 10%;
     top: 5%;
-    transform: rotate(5deg);
 }
 
 .cta-img-2{
-    position: absolute;
     right: 10%;
     bottom: 5%;
-    transform: rotate(5deg);
 }
 
 
@@ -243,8 +243,6 @@ h2{
 #contact{
     background-color: white;
     color: #8f8f8f;
-    text-align: center;
-    padding: 5%;
 }
 
 .contact-link-icon{
