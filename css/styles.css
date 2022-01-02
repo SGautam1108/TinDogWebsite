@@ -11,6 +11,10 @@ body{
     animation-timing-function: ease-in;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+}
+
 @keyframes fadeIn {
     from{
         opacity: 1;
@@ -38,24 +42,36 @@ body{
     padding: 7% 15%;
 }
 
+/* Color the sections */
+
+.white-section{
+    background-color: white;
+    color: #444444;
+}
+
+.colored-section{
+    color: white;
+}
+
 /* Header and Title */
 
 #header{
     background-image: linear-gradient(to top right, #fd297b, #ff5864, #ff655b );
-    color: white;
 }
 
 #header .container-fluid{
     padding: 3% 15% 10%;
+    text-align: left;
 }
 
 /* Navbar */
 .navbar{
     margin:0 0 4.5rem;
+    font-family: 'Ubuntu', sans-serif;
+
 }
 
 .navbar-brand{
-    font-family: 'Ubuntu', sans-serif;
     font-size: 2.5rem;
     font-weight: 400;
 }
@@ -70,11 +86,6 @@ body{
     font-size: 1.25rem;
     font-weight:400;
 }
-
-.title{
-    text-align: left;
-}
-
 
 /* Download Button and App Mockup */
 
@@ -109,7 +120,6 @@ body{
 /* Features of tindog */
 
 #features{
-    background-color: white;
     position: relative;
 }
 
@@ -145,8 +155,7 @@ body{
 /* Testimonial */
 
 #testimonials{
-    background: linear-gradient(#fd4c68 30%, #e7435c 60%, #ce4242);
-    color: white;
+    background: linear-gradient(#fd4c68 60%, #ff5864);
     padding-bottom: 5%;
 }
 
@@ -186,21 +195,29 @@ body{
 /* Press coverage */
 
 #press{
-    padding-bottom: 3%;
-    background-color: #ce4242;
+    padding-bottom: 5%;
+    background-color: #ff5864;
+}
+
+.press-row{
+    padding: 0 20%;
+    align-items: center;
 }
 
 .press-img{
-    width:10%;
-    height: 10%;
-    margin: 20px 20px 50px;
+    max-height: 50px;
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 100px whitesmoke, 0 0 300px white;
 }
+
 
 /* Call to action */
 
 #cta{
-    background-image: linear-gradient(#ff5864, #ff655b );
-    color:white;
+    background-image: linear-gradient(to top, #fd4c68, #ff5864);
     position: relative;
 }
 
@@ -241,7 +258,6 @@ body{
 /* Contact and Copyright */
 
 #contact{
-    background-color: white;
     color: #8f8f8f;
 }
 
